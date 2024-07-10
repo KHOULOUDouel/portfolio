@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Work - Khouloud Ouelhazi</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/Normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ysabeau+Office:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation-menu page-header__item borderYtoX">
+      <a href="index.html" role="menuitem" class="navigation-menu__item">HOME</a>
+      <a href="work.html" role="menuitem" class="navigation-menu__item navigation-menu__item--active">WORK</a>
+      <a href="about.html" role="menuitem" class="navigation-menu__item">ABOUT</a>
+      <a href="contact.html" role="menuitem" class="navigation-menu__item">CONTACT</a>
+    </nav>
+  </header>
+
+  <div>
+    <h1>My Projects...</h1>
+  </div>
+
+  <section>
+    
+
+      
+      <div class="grid__item">
+        <h2 class="work-headers">Meetup</h2>
+        <p class="work__description"> In this project I aimed to develop a serverless progressive web application (PWA) using React and a test-driven development (TDD) approach. The application leverages the Google Calendar API to fetch upcoming events, combining the benefits of serverless architecture and PWAs. The key features include filtering events by city, showing/hiding event details, specifying the number of events, offline functionality, and charts for data visualization. The technical requirements encompass React, Google Calendar API with OAuth2 authentication, serverless functions using AWS Lambda, cross-browser compatibility, responsiveness, PWA checklist compliance, offline support, installation on home screens and an alert system using an OOP approach.
+
+            Through this project, I gained in depth knowledge of serverless functions, unit testing, integration testing, user acceptance testing, continuous delivery, object-oriented programming, progressive web apps, and data visualization.</p>
+        <a class="view-work-link" href="https://khouloudouel.github.io/meet/" target="_blank">View Meetup</a>
+        <br>
+        <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/meet" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn" onClick="openModal('meetup-modal')">More Details</button>
+        <div id="meetup-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="./logo.img/Screenshot 2024-07-10 at 1.27.29 AM.png" alt="Meetup Image">
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>To build a serverless, progressive web application (PWA) with React using a
+                test-driven development (TDD) technique. The application uses the Google
+                Calendar API to fetch upcoming events.</p>
+              <h2>Technologies Used</h2>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>TDD technique</li>
+              <li>Google Calendar API</li>
+              <li>OAuth2</li>
+              <li>Serverless Functions (AWS Lambda)</li>
+              <li>Lighthouse</li>
+              <li>GitHub Pages</li>
+              <li>OOP paradigm</li>
+            </div>
+            <button onClick="closeModal('meetup-modal')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/KHOULOUDouel" target="_blank">
+        <img src="./logo.img/25231.png" height="40" width="40" alt="Github"></a>
+      <a href="" target="_blank">
+        <img src="./logo.img/circle-linkedin-512.webp" height="40" width="40" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <a href="#">Back to top</a>
+
+  <script src="./js/tota11y.min.js"></script>
+  <script>
+    function openModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "block";
+    }
+    function closeModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
