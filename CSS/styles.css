@@ -1,0 +1,347 @@
+
+/* General Styles */
+body {
+    font-family: 'Ysabeau Office', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffe4e1; /* Dusty Pink Background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header__item {
+    margin: 0;
+}
+
+.navigation-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation-menu__item {
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.navigation-menu__item--active,
+.navigation-menu__item:hover {
+    border-color: #800080; /* Purple Border */
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+}
+
+/* Profile Section Styles */
+.profile {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.typed {
+    font-size: 3.2em; /* Increased font size */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+#evan {
+    color: #800080; /* Purple Text */
+}
+
+.profile p {
+    font-size: 1.4em; /* Increased font size */
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Button Styles */
+.button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.button a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #800080; /* Purple Background */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+    background-color: #b03060; /* Darker Dusty Pink Background */
+}
+
+/* Footer Styles */
+.page-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe4e1; /* Dusty Pink Background */
+    border-top: 1px solid #ddd;
+    font-size: 1.1em;
+    margin-top: auto;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 15px;
+}
+
+.social-media img {
+    vertical-align: middle;
+    height: 40px; /* Adjusted size for better balance */
+    width: 40px;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 20px;
+    background-color: #800080; /* Purple Background */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #b03060; /* Darker Dusty Pink Background */
+}
+
+/* Work Section Styles */
+.work-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Increased min width for grid items */
+    gap: 40px; /* Increased gap between items */
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1600px; /* Increased max width for better readability */
+}
+
+.grid__item {
+    border: 1px solid #ddd;
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for transform and box-shadow */
+}
+
+.grid__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added box-shadow on hover */
+}
+
+.image-container {
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid__item:target .image-container img {
+    transform: scale(2); /* Double the size of the image */
+}
+
+.work-headers {
+    font-size: 2.5em; /* Increased font size */
+    color: #800080; /* Purple Text */
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+.work__description {
+    font-size: 1.5em; /* Increased font size */
+    margin: 20px 0; /* Increased margin */
+}
+
+.view-work-link, .view-gh-repo, .view-details-btn {
+    display: inline-block;
+    padding: 15px 25px; /* Increased padding */
+    background-color: #800080; /* Purple Background */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Added margin-bottom for better spacing */
+}
+
+.view-work-link:hover, .view-gh-repo:hover, .view-details-btn:hover {
+    background-color: #b03060; /* Darker Dusty Pink Background */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;  /* Adjusted for larger modals */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;  /* Increased width */
+    max-width: 1200px; /* Added max-width */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #800080; /* Purple Background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b03060; /* Darker Dusty Pink Background */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+#chat-app-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contact-section h1 {
+    font-size: 2.8em;
+    color: #800080; /* Purple Text */
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.4em; /* Increased font size */
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 1.2em; /* Increased font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #800080; /* Purple Background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #b03060; /* Darker Dusty Pink Background */
+}
+
+/* LinkedIn Section Styles */
+.linkedin-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+.linkedin-section h2 {
+    font-size: 2.2em;
+    color: #0077b5; /* LinkedIn Blue */
+    margin-bottom: 20px;
+}
+
+.linkedin-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #005582; /* Darker LinkedIn Blue */
+}

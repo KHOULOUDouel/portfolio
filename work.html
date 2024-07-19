@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Work - Khouloud Ouelhazi</title>
+  <title>Khouloud Ouelhazi</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/Normalize.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Remove this line -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/Normalize.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ysabeau+Office:wght@400;700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="./styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Khouloud Ouelhazi showcasing various projects and work.">
+  <meta name="keywords" content="Khouloud Ouelhazi, Portfolio, Web Development, Projects">
 </head>
 
 <body>
@@ -33,37 +26,27 @@
     </nav>
   </header>
 
-  <div>
+  <div class="profile">
     <h1>My Projects...</h1>
   </div>
 
-  <section>
-    
-
-      
-      <div class="grid__item">
-        <h2 class="work-headers">Meetup</h2>
-        <p class="work__description"> In this project I aimed to develop a serverless progressive web application (PWA) using React and a test-driven development (TDD) approach. The application leverages the Google Calendar API to fetch upcoming events, combining the benefits of serverless architecture and PWAs. The key features include filtering events by city, showing/hiding event details, specifying the number of events, offline functionality, and charts for data visualization. The technical requirements encompass React, Google Calendar API with OAuth2 authentication, serverless functions using AWS Lambda, cross-browser compatibility, responsiveness, PWA checklist compliance, offline support, installation on home screens and an alert system using an OOP approach.
-
-            Through this project, I gained in depth knowledge of serverless functions, unit testing, integration testing, user acceptance testing, continuous delivery, object-oriented programming, progressive web apps, and data visualization.</p>
-        <a class="view-work-link" href="https://khouloudouel.github.io/meet/" target="_blank">View Meetup</a>
-        <br>
-        <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/meet" target="_blank">GitHub
-          Repository</a>
-        <br>
-        <button class="view-details-btn" onClick="openModal('meetup-modal')">More Details</button>
-        <div id="meetup-modal" class="modal">
-          <div class="modal-content">
-            <h2>Screenshots</h2>
-            <div class="image-container">
-              <img src="./logo.img/Screenshot 2024-07-10 at 1.27.29 AM.png" alt="Meetup Image">
-            </div>
-            <div>
-              <h2>Objective</h2>
-              <p>To build a serverless, progressive web application (PWA) with React using a
-                test-driven development (TDD) technique. The application uses the Google
-                Calendar API to fetch upcoming events.</p>
-              <h2>Technologies Used</h2>
+  <section class="work-section">
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">Meetup</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-10 at 1.27.29 AM.png" alt="Meetup Image">
+      </div>
+      <p class="work__description">The meet app is a serverless, progressive web app (PWA) built with React using test-driven development. The app allows users to view a specific city's events and their details. The application uses the Google Calendar API to fetch upcoming events.</p>
+      <a class="view-work-link" href="https://khouloudouel.github.io/meet/" target="_blank">View Meetup</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/meet" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('meetup-modal')">More Details</button>
+      <div id="meetup-modal" class="modal">
+        <div class="modal-content">
+          <div>
+            <h2>Objective</h2>
+            <p>To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.</p>
+            <h2>Technologies Used</h2>
+            <ul>
               <li>JavaScript</li>
               <li>React</li>
               <li>TDD technique</li>
@@ -73,35 +56,194 @@
               <li>Lighthouse</li>
               <li>GitHub Pages</li>
               <li>OOP paradigm</li>
-            </div>
-            <button onClick="closeModal('meetup-modal')">Close</button>
+            </ul>
           </div>
+          <button onclick="closeModal('meetup-modal')">Close</button>
         </div>
       </div>
+    </div>
 
-      </section>
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">Pokédex</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-15 at 3.18.39 PM.png" alt="Pokédex Image">
+      </div>
+      <p class="work__description">In this project, I developed the "Pokemon App," a JavaScript-based web application for users to explore the Pokémon database. By fetching data from the external Pokémon API, users can view information about each Pokémon.</p>
+      <a class="view-work-link" href="https://khouloudouel.github.io/Javascript-firstproject/" target="_blank">View Pokédex</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/Javascript-firstproject" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('pokedex-modal')">More Details</button>
+      <div id="pokedex-modal" class="modal">
+        <div class="modal-content">
+          <div>
+            <h2>Objective</h2>
+            <p>To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.</p>
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>External API</li>
+              <li>ESLint</li>
+              <li>Prettier</li>
+              <li>Modals</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+          <button onclick="closeModal('pokedex-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">movie-api</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-15 at 4.16.25 PM.png" alt="movie-api Image">
+      </div>
+      <p class="work__description">The myFlix API is a RESTful backend service designed for the myFlix web application, providing comprehensive movie information including details on movies, directors, and genres. Built with Node.js, Express, and MongoDB, it supports user registration, profile management, and the ability to curate a list of favorite movies, ensuring secure and efficient data handling.</p>
+      <a class="view-work-link" href="https://khouloud-movies-c211078f4ca4.herokuapp.com/" target="_blank">View movie-api</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/movie-api" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('movie-api-modal')">More Details</button>
+      <div id="movie-api-modal" class="modal">
+        <div class="modal-content">
+          <div>
+            <h2>Objective</h2>
+            <p>To build the server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.</p>
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>MERN stack (MongoDB, Express, React, Node.js)</li>
+              <li>REST architecture</li>
+              <li>Middleware modules (body-parser, morgan)</li>
+              <li>Mongoose</li>
+              <li>Postman</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <button onclick="closeModal('movie-api-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">myFlix-client</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-17 at 9.29.38 PM.png" alt="myFlix-client Image">
+      </div>
+      <p class="work__description">myFlix-client is a client side app used to view a list of movies. Users can login and view information about movies, such as actors, directors, genre and more. The user can also add and remove movies from their favorites list, update their profile information and unregister. The front end is built using React and accesses the MyFlix API.</p>
+      <a class="view-work-link" href="https://app-flix.netlify.app/" target="_blank">View myFlix-client</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/myFlix-client" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('myFlix-client-modal')">More Details</button>
+      <div id="myFlix-client-modal" class="modal">
+        <div class="modal-content">
+          <div>
+            <h2>Objective</h2>
+            <p>Using React, build the client-side for an app called myFlix-client based on its existing server-side code (REST API and database).</p>
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Single-page application (SPA)</li>
+              <li>State routing</li>
+              <li>Parcel</li>
+              <li>Bootstrap (UI library)</li>
+              <li>Function components</li>
+              <li>Netlify</li>
+            </ul>
+          </div>
+          <button onclick="closeModal('myFlix-client-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">Chat-App</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-17 at 10.47.17 PM.png" alt="Chat-App Image">
+      </div>
+      <p class="work__description">This Chat app is a React Native mobile chat application designed to facilitate communication between users. It allows users to exchange text messages, share images, and send their current location. The app is built using React Native, Expo, and Google Firestore Database.</p>
+      <a class="view-work-link" href="#" target="_blank">View Chat-App</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/Chat-App" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('Chat-App-modal')">More Details</button>
+      <div id="Chat-App-modal" class="modal">
+        <div class="modal-content">
+          
+          
+          <div>
+            <h2>Objective</h2>
+            <p>The objective of this project was to develop a cross-platform mobile chat app using React Native, enabling chat, image, and location sharing, with data storage managed by Google Firestore/Firebase.</p>
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Expo ImagePicker</li>
+              <li>Google Firestore/Firebase</li>
+              <li>Gifted Chat Library</li>
+              <li>Expo Location</li>
+              <li>Android Studio</li>
+            </ul>
+          </div>
+          <button onclick="closeModal('Chat-App-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item" onclick="moveItem(this)">
+      <h2 class="work-headers">myFlix-Angular-client</h2>
+      <div class="image-container">
+        <img src="./work screenshot/Screenshot 2024-07-18 at 10.04.50 PM.png" alt="myFlix-Angular-client">
+      </div>
+      <p class="work__description">MyFlix is a client side app used to view a list of movies. Users can login and view information about movies, such as actors, directors, genre and more. The user will also be able to add and remove movies from their favorites list, and update their profile information. The front end is built using Angular and accesses the MyFlix API.</p>
+      <a class="view-work-link" href="https://khouloudouel.github.io/myFlix-Angular-client-v2/" target="_blank">View myFlix-Angular-client</a>
+      <a class="view-gh-repo" href="https://github.com/KHOULOUDouel/myFlix-Angular-client" target="_blank">GitHub Repository</a>
+      <button class="view-details-btn" onclick="openModal('myFlix-Angular-client-modal')">More Details</button>
+      <div id="myFlix-Angular-client-modal" class="modal">
+        <div class="modal-content">
+          <div>
+            <h2>Objective</h2>
+            <p>Within this project, using Angular, TypeScript, I build the client-side app called myFlix based on its existing server-side code (My MOVIE-API project).</p>
+            <h2>Technologies Used</h2>
+            <ul>
+              <li>Angular</li>
+              <li>Angular Material</li>
+              <li>TypeDoc</li>
+              <li>HttpClient</li>
+              <li>tsconfig.json</li>
+              <li>angular-cli-ghpages</li>
+              <li>RxJS</li>
+              <li>angular.json</li>
+            </ul>
+          </div>
+          <button onclick="closeModal('myFlix-Angular-client-modal')">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
-      <a href="https://github.com/KHOULOUDouel" target="_blank">
-        <img src="./logo.img/25231.png" height="40" width="40" alt="Github"></a>
-      <a href="" target="_blank">
-        <img src="./logo.img/circle-linkedin-512.webp" height="40" width="40" alt="LinkedIn"></a>
+      <a href="https://github.com/KHOULOUDouel" target="_blank"><img src="logo.img/25231.png" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/khouloud-ouelhazi-ba670331a/" target="_blank"><img src="logo.img/circle-linkedin-512.webp" alt="LinkedIn"></a>
     </div>
   </footer>
 
-  <a href="#">Back to top</a>
+  <a href="#" class="back-to-top">Back to top</a>
 
-  <script src="./js/tota11y.min.js"></script>
+  <script src="js/tota11y.min.js"></script>
   <script>
     function openModal(modalId) {
       let modal = document.getElementById(modalId);
       modal.style.display = "block";
     }
+
     function closeModal(modalId) {
       let modal = document.getElementById(modalId);
       modal.style.display = "none";
+    }
+
+    function moveItem(element) {
+      element.classList.add('active');
+      setTimeout(() => {
+        element.classList.remove('active');
+      }, 300); // Match this duration to the CSS transition duration
     }
   </script>
 </body>
